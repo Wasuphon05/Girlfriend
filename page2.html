@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page 2</title>
+  <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+  <div class="page2">
+    <div class="card2">
+
+    <h1 class="title2"> ดีกันนะคั้บบ ♡</h1>
+
+    <div class="pic2">
+        <img class="cat2" src="Images/Cat3.jpg" alt="cat">
+    </div>
+
+    <p class="hint2">เลือกได้เลยน้าา 🥺</p>
+
+    <div class="actions2" id="actions">
+        <button class="btn2 yes2" id="yesBtn" type="button">ดีก็ได้</button>
+        <button class="btn2 no2" id="noBtn" type="button">หึ</button>
+    </div>
+
+    <script>
+        const actions = document.getElementById("actions");
+        document.getElementById("noBtn").addEventListener("click", () => {
+            actions.classList.add("forgive-mode");
+        });
+    </script>
+
+    <script>
+    document.getElementById("yesBtn").addEventListener("click", () => {
+        window.location.href = "page3.html";
+    });
+    </script>
+
+
+    </div>
+  </div>
+</body>
+</html>
